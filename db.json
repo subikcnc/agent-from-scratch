@@ -1,46 +1,5 @@
 {
   "messages": [
-    {
-      "role": "user",
-      "content": "How is the weather?",
-      "id": "b0c707cc-f2d2-4f95-91f6-6facd9333855",
-      "createdAt": "2025-12-05T10:40:45.092Z"
-    },
-    {
-      "role": "assistant",
-      "tool_calls": [
-        {
-          "id": "6dnhxd739",
-          "type": "function",
-          "function": {
-            "name": "get_stuff",
-            "arguments": "{\"city\":\"your location\",\"reasoning\":\"default reasoning\"}"
-          }
-        }
-      ],
-      "id": "ac2252ab-2df1-4566-8bde-02c32a5f22a9",
-      "createdAt": "2025-12-05T10:40:45.373Z"
-    },
-    {
-      "role": "user",
-      "content": "How is the weather?",
-      "id": "9f8d3111-30d3-4350-938a-7480e43dfa00",
-      "createdAt": "2025-12-05T11:24:30.063Z"
-    },
-    {
-      "role": "assistant",
-      "tool_calls": [
-        {
-          "id": "676t9xwmt",
-          "type": "function",
-          "function": {
-            "name": "get_stuff",
-            "arguments": "{\"city\":\"London\",\"reasoning\":\"default reasoning\"}"
-          }
-        }
-      ],
-      "id": "aa1a5b57-6e4e-4b81-ac87-47e096e21fed",
-      "createdAt": "2025-12-05T11:24:30.398Z"
-    }
+    
   ]
 }
