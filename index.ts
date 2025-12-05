@@ -1,6 +1,7 @@
 import 'dotenv/config'
-import { runLLM } from './src/llm'
-import { addMessages, getMessages } from './src/memory'
+import { runAgent } from './src/agent'
+import { zodToJsonSchema } from 'zod-to-json-schema'
+import { z } from 'zod'
 
 const userMessage = process.argv[2]
 
@@ -9,20 +10,36 @@ if (!userMessage) {
   process.exit(1)
 }
 
-await addMessages([
-    { role: 'user', content: userMessage },
-])  
-const messages = await getMessages()
+// Define the schema
+const weatherSchema = z.object({
+    city: z.string()
+})
 
-const response = await runLLM({messages})
-
-if(!response) {
-    console.error('No response from LLM')
-    process.exit(1)
+const weatherTool = {
+    type: 'function',
+    function: {
+        name: 'get_stuff',
+        description: 'Use this function to get the weather',
+        parameters: zodToJsonSchema(weatherSchema, "weatherTool"),
+    }
 }
 
-await addMessages([
-    { role: 'assistant', content: response},
-])
+// const tools = [
+//   {
+//     type: 'function',
+//     function: {
+//       name: 'system_time',
+//       description: 'Get the current system time',
+//       parameters: {
+//         type: 'object',
+//         properties: {},
+//         required: [],
+//       },
+//     },
+//   },
+// ]
 
+const tools: any[] = [weatherTool]
+
+const response = await runAgent({userMessage, tools})
 console.log(response)
