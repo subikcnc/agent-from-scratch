@@ -11,16 +11,17 @@ if (!userMessage) {
 }
 
 // Define the schema
-const weatherSchema = z.object({
-    city: z.string()
+const stuffSchema = z.object({
+    city: z.string(),
+    reasoning: z.string().describe('why did you pick this tool?')
 })
 
-const weatherTool = {
+const stuffTool = {
     type: 'function',
     function: {
         name: 'get_stuff',
-        description: 'Use this function to get the weather',
-        parameters: zodToJsonSchema(weatherSchema, "weatherTool"),
+        description: 'Use this to get the weather and only the weather',
+        parameters: zodToJsonSchema(stuffSchema, "stuffTool"),
     }
 }
 
@@ -39,7 +40,7 @@ const weatherTool = {
 //   },
 // ]
 
-const tools: any[] = [weatherTool]
+const tools: any[] = [stuffTool]
 
 const response = await runAgent({userMessage, tools})
 console.log(response)
