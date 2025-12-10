@@ -1,4 +1,5 @@
 import { dadJoke } from './tools/dadJoke'
+import { reddit } from './tools/reddit'
 
 export const getWeather = async ({
   toolArgs,
@@ -23,6 +24,8 @@ export const runTool = async (
       return getWeather(input)
     case 'dad_joke':
       return dadJoke(input)
+    case 'reddit':
+      return reddit(input)
 
     default:
       throw new Error(`Unknown tool: ${toolCall.name}`)

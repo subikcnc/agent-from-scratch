@@ -1,3 +1,68 @@
 {
-  "messages": []
+  "messages": [
+    {
+      "role": "user",
+      "content": "Tell me about Clash Royale",
+      "id": "d6459a60-d64e-42f4-874b-0a0e465cf086",
+      "createdAt": "2025-12-10T12:08:40.637Z"
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "id": "wprsq8jjb",
+          "type": "function",
+          "function": {
+            "name": "reddit",
+            "arguments": "null"
+          }
+        }
+      ],
+      "id": "c3483ed1-35c7-40ef-a7b4-924c68aecba3",
+      "createdAt": "2025-12-10T12:08:41.066Z"
+    },
+    {
+      "role": "tool",
+      "content": "[\n  {\n    \"title\": \"Deck Help Discussion Thread\",\n    \"link\": \"https://www.reddit.com/r/ClashRoyale/comments/1pity8f/deck_help_discussion_thread/\",\n    \"subreddit\": \"r/ClashRoyale\",\n    \"author\": \"AutoModerator\",\n    \"upvotes\": 2\n  },\n  {\n    \"title\": \"[POLL] Day 1 of Heroes Discussion\",\n    \"link\": \"https://www.reddit.com/r/ClashRoyale/comments/1pfgl8k/poll_day_1_of_heroes_discussion/\",\n    \"subreddit\": \"r/ClashRoyale\",\n    \"author\": \"jmanguy\",\n    \"upvotes\": 6\n  },\n  {\n    \"title\": \"Knight decides to switch lanes and tank sparky shot\",\n    \"link\": \"https://v.redd.it/dufw9anvla6g1\",\n    \"subreddit\": \"r/ClashRoyale\",\n    \"author\": \"H2oFrostbyte\",\n    \"upvotes\": 772\n  },\n  {\n    \"title\": \"Boys….I thought we talked about this\",\n    \"link\": \"https://i.redd.it/xi02177f8a6g1.jpeg\",\n    \"subreddit\": \"r/ClashRoyale\",\n    \"author\": \"ExtremeAddendum3387\",\n    \"upvotes\": 702\n  },\n  {\n    \"title\": \"Next hero leaked?\",\n    \"link\": \"https://v.redd.it/3jkafaqc986g1\",\n    \"subreddit\": \"r/ClashRoyale\",\n    \"author\": \"propatria1\",\n    \"upvotes\": 1787\n  },\n  {\n    \"title\": \"Unstoppable force meets an immovable object ON AIR💨? How?\",\n    \"link\": \"https://v.redd.it/6z1xfwkc386g1\",\n    \"subreddit\": \"r/ClashRoyale\",\n    \"author\": \"Subject-Profession-5\",\n    \"upvotes\": 1880\n  },\n  {\n    \"title\": \"People might ragebait, but I hate witch, I really do, specially evo\",\n    \"link\": \"https://www.reddit.com/r/ClashRoyale/comments/1piwh9h/people_might_ragebait_but_i_hate_witch_i_really/\",\n    \"subreddit\": \"r/ClashRoyale\",\n    \"author\": \"Voident_\",\n    \"upvotes\": 168\n  },\n  {\n    \"title\": \"How long until they start limiting how many crowns you can earn per day?\",\n    \"link\": \"https://i.redd.it/746r8138dc6g1.jpeg\",\n    \"subreddit\": \"r/ClashRoyale\",\n    \"author\": \"EFGgaming\",\n    \"upvotes\": 119\n  },\n  {\n    \"title\": \"Are these considered rare?\",\n    \"link\": \"https://i.redd.it/6dnqsxnap86g1.jpeg\",\n    \"subreddit\": \"r/ClashRoyale\",\n    \"author\": \"Chronuak\",\n    \"upvotes\": 1085\n  },\n  {\n    \"title\": \"Well then, giant people.\",\n    \"link\": \"https://i.redd.it/ur8y717fp66g1.png\",\n    \"subreddit\": \"r/ClashRoyale\",\n    \"author\": \"Mgk012\",\n    \"upvotes\": 3062\n  },\n  {\n    \"title\": \"I created this image in ms paint\",\n    \"link\": \"https://i.redd.it/jkqod3gz3d6g1.jpeg\",\n    \"subreddit\": \"r/ClashRoyale\",\n    \"author\": \"Psychological-Crab37\",\n    \"upvotes\": 52\n  },\n  {\n    \"title\": \"Bro just came here to hate\",\n    \"link\": \"https://i.redd.it/x9yfvsvmqb6g1.png\",\n    \"subreddit\": \"r/ClashRoyale\",\n    \"author\": \"EnvironmentalEar3758\",\n    \"upvotes\": 98\n  },\n  {\n    \"title\": \"Thoughts on Spirit Empress?\",\n    \"link\": \"https://i.redd.it/0mnvyzp20a6g1.jpeg\",\n    \"subreddit\": \"r/ClashRoyale\",\n    \"author\": \"ExaminationCute8063\",\n    \"upvotes\": 282\n  },\n  {\n    \"title\": \"EVOLUTION CONCEPT: Evolution Rage\",\n    \"link\": \"https://www.reddit.com/gallery/1pit0eo\",\n    \"subreddit\": \"r/ClashRoyale\",\n    \"author\": \"UndoneAndOvercooked\",\n    \"upvotes\": 157\n  },\n  {\n    \"title\": \"Level 7 Boss Bandit because all Supercell does is lie.\",\n    \"link\": \"https://www.reddit.com/gallery/1pii4ce\",\n    \"subreddit\": \"r/ClashRoyale\",\n    \"author\": \"myrandomcrashouts\",\n    \"upvotes\": 575\n  },\n  {\n    \"title\": \"Hero Mini P.E.K.K.A. fanart by me!\",\n    \"link\": \"https://i.redd.it/cqj3igno966g1.jpeg\",\n    \"subreddit\": \"r/ClashRoyale\",\n    \"author\": \"Garou_FGC\",\n    \"upvotes\": 2184\n  },\n  {\n    \"title\": \"Petition to remove the second Champion slot\",\n    \"link\": \"https://i.redd.it/93nssv5zf66g1.jpeg\",\n    \"subreddit\": \"r/ClashRoyale\",\n    \"author\": \"LuukKaduuk\",\n    \"upvotes\": 1938\n  },\n  {\n    \"title\": \"Average Hero Musket defense value\",\n    \"link\": \"https://v.redd.it/6hdkhfav566g1\",\n    \"subreddit\": \"r/ClashRoyale\",\n    \"author\": \"Subject-Profession-5\",\n    \"upvotes\": 1718\n  },\n  {\n    \"title\": \"People keep saying \\\"Jynxzi did nothing for Clash, it revived by itself\\\" but we just got another proof\",\n    \"link\": \"https://i.redd.it/gihj2gym3d6g1.jpeg\",\n    \"subreddit\": \"r/ClashRoyale\",\n    \"author\": \"VGKSuomi\",\n    \"upvotes\": 26\n  },\n  {\n    \"title\": \"supercell relax i’m already quitting u don’t have to keep convincing me lol\",\n    \"link\": \"https://i.redd.it/fjtlr53nh96g1.jpeg\",\n    \"subreddit\": \"r/ClashRoyale\",\n    \"author\": \"NotaSecretaryy\",\n    \"upvotes\": 205\n  },\n  {\n    \"title\": \"My Experience With Level 16 and the New Heroes… Thanks Supercell 👍👍👍\",\n    \"link\": \"https://v.redd.it/ycgt70eqtc6g1\",\n    \"subreddit\": \"r/ClashRoyale\",\n    \"author\": \"Frost_105\",\n    \"upvotes\": 23\n  },\n  {\n    \"title\": \"Midladder deck, did I do it right?\",\n    \"link\": \"https://i.redd.it/hleuf3v34c6g1.jpeg\",\n    \"subreddit\": \"r/ClashRoyale\",\n    \"author\": \"darkyy92x\",\n    \"upvotes\": 30\n  },\n  {\n    \"title\": \"Is my gf as good as she says she is?\",\n    \"link\": \"https://i.redd.it/i262uu9d1b6g1.png\",\n    \"subreddit\": \"r/ClashRoyale\",\n    \"author\": \"General-Cup-6720\",\n    \"upvotes\": 57\n  },\n  {\n    \"title\": \"Updated list of removed content\",\n    \"link\": \"https://i.redd.it/pjmfcq80o66g1.png\",\n    \"subreddit\": \"r/ClashRoyale\",\n    \"author\": \"taaler\",\n    \"upvotes\": 805\n  },\n  {\n    \"title\": \"Sometimes troops need to blow off steam\",\n    \"link\": \"https://v.redd.it/f9r661ejk96g1\",\n    \"subreddit\": \"r/ClashRoyale\",\n    \"author\": \"Crafty-Librarian1889\",\n    \"upvotes\": 126\n  }\n]",
+      "tool_call_id": "wprsq8jjb",
+      "id": "6a6ecc46-e7bd-459c-8197-6c96414e8afa",
+      "createdAt": "2025-12-10T12:08:42.487Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Clash Royale is a popular online multiplayer game where players can discuss various topics such as deck help, new heroes, and strategies. Some users share their experiences, opinions, and fan art, while others create polls, memes, and jokes related to the game. The community also discusses updates, removed content, and balance changes. If you're looking for information on a specific topic, you can check out the various posts and discussions on the Clash Royale subreddit.",
+      "id": "1466a6d4-5da7-4169-a962-a56ea3d42490",
+      "createdAt": "2025-12-10T12:08:43.379Z"
+    },
+    {
+      "role": "user",
+      "content": "Hello my name is Subik",
+      "id": "9a62babc-0140-48d9-998f-5609557824db",
+      "createdAt": "2025-12-10T12:09:07.242Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Hello Subik, it's nice to meet you. Is there something I can help you with or would you like to chat?",
+      "id": "e5303751-d0cb-438a-ac89-57073a3ba9d4",
+      "createdAt": "2025-12-10T12:09:07.623Z"
+    },
+    {
+      "role": "user",
+      "content": "What did i ask you about Clash?",
+      "id": "dc31227c-b910-4d5f-bdde-f9c489a5878f",
+      "createdAt": "2025-12-10T12:09:24.876Z"
+    },
+    {
+      "role": "assistant",
+      "content": "You asked me to \"Tell me about Clash Royale\". I provided you with a list of posts from the Clash Royale subreddit, which included various discussions, memes, and topics related to the game.",
+      "id": "5a501bc7-025b-4722-b55e-81c3dafeca02",
+      "createdAt": "2025-12-10T12:09:25.384Z"
+    },
+    {
+      "role": "user",
+      "content": "Pull a meme for me from the reddit",
+      "id": "6b16354b-8602-442d-9df0-f86878927f5e",
+      "createdAt": "2025-12-10T12:09:46.013Z"
+    }
+  ]
 }
