@@ -20,9 +20,9 @@ export const runAgent = async ({
     let response = await runLLM({ messages: history, tools })
 
     await addMessages([response])
+    logMessage(response)
     if (response.content) {
       loader.stop()
-      logMessage(response)
       return getMessages()
     }
     if (response.tool_calls) {
@@ -35,7 +35,7 @@ export const runAgent = async ({
       loader.update(`Executed tool: ${toolCall.function.name}`)
       console.log('Tool calls', response.tool_calls)
       console.log('------------------ Tool Response Log----------------')
-      logMessage(response)
+      //   logMessage(response)
       console.log('------------------ Tool Response Log----------------')
     }
   }

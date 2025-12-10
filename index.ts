@@ -2,6 +2,7 @@ import 'dotenv/config'
 import { runAgent } from './src/agent'
 import { zodToJsonSchema } from 'zod-to-json-schema'
 import { z } from 'zod'
+import { dadJokeTool } from './src/tools/dadJoke'
 
 const userMessage = process.argv[2]
 
@@ -20,7 +21,8 @@ const weatherTool = {
   type: 'function',
   function: {
     name: 'getWeather',
-    description: 'Use this to get the weather and only the weather',
+    description:
+      'Get the current real-time weather and temperature for a specific city. Use this whenever the user asks about weather.',
     parameters: zodToJsonSchema(weatherSchema, 'weatherTool'),
   },
 }
@@ -40,7 +42,7 @@ const weatherTool = {
 //   },
 // ]
 
-const tools: any[] = [weatherTool]
+const tools: any[] = [weatherTool, dadJokeTool]
 
 const response = await runAgent({ userMessage, tools })
 console.log(response)

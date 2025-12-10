@@ -2,6 +2,7 @@ export type AIMessage =
   | { role: 'user'; content: string }
   | { role: 'tool'; content: string; tool_call_id: string }
   | { role: 'assistant'; content: string | null; tool_calls?: any[] }
+  | { role: 'system'; content: string }
 
 export interface ToolFn<A = any, T = any> {
   (input: { userMessage: string; toolArgs: A }): Promise<T>
